@@ -25,11 +25,11 @@ env:
   GKE_PROJECT: ${{ secrets.PROJECT_ID }}
   GITHUB_SHA: ${{ github.sha }}
   GKE_ZONE: australia-southeast1
-  GKE_CLUSTER: devsecol-cluster
+  GKE_CLUSTER: ${{ secrets.GKE_CLUSTER }}
   GKE_PREFIX: ricardo
   IMAGE: ricardo-gke-test
   DEPLOYMENT_NAME: nginx-deployment
-  REGISTRY_HOSTNAME: asia.gcr.io
+  REGISTRY_HOSTNAME: gcr.io
 
 jobs:
   setup-build-publish-deploy:
