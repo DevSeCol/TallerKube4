@@ -24,7 +24,7 @@ on:
 env:
   GKE_PROJECT: ${{ secrets.PROJECT_ID }}
   GITHUB_SHA: ${{ github.sha }}
-  GKE_ZONE: australia-southeast1
+  GKE_ZONE: us-central1
   GKE_CLUSTER: ${{ secrets.GKE_CLUSTER }}
   GKE_PREFIX: ricardo
   IMAGE: ricardo-gke-test
